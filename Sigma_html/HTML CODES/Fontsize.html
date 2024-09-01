@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Font Size</title>
+    <style>
+        #content {
+            font-size: 16px; /* Initial font size */
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="changeFontSize('increase')">Increase Font Size</button>
+        <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+    </div>
+    <div id="content">
+        This is some sample text. You can increase or decrease its font size using the buttons above.
+    </div>
+
+    <script>
+        function changeFontSize(action) {
+            const content = document.getElementById('content');
+            let currentSize = parseFloat(window.getComputedStyle(content, null).getPropertyValue('font-size'));
+            
+            if (action === 'increase') {
+                content.style.fontSize = (currentSize + 2) + 'px';
+            } else if (action === 'decrease') {
+                content.style.fontSize = (currentSize - 2) + 'px';
+            }
+        }
+    </script>
+</body>
+</html>

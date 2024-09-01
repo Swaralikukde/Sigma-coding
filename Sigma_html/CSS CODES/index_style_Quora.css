@@ -1,0 +1,74 @@
+/* universal selector */
+*{
+    font-family:'Courier New';
+}
+
+/* Element selector */
+/* h3{
+    color:purple;
+} */
+h1,h3{
+    color:#b92b27;
+}
+
+/* Id selector */
+#login{
+    background-color: aqua;
+    color:black;
+}
+
+#signup{
+    background-color: #b92b27;
+    color:white;
+}
+
+/* class selector */
+.upvote{
+    background-color: green;
+    color:white;
+}
+/* descendent selector */
+p a{
+    background-color: yellow;
+    color:purple;
+}
+nav ul li a{
+    color:hotpink;
+}
+
+/* Sibling combinator */
+p+h3{
+    text-decoration:double underline;
+}
+
+/* pseudo class */
+button:hover{
+    color:red;
+    background-color: yellow;
+}
+
+h3:hover{
+    text-decoration: none;
+}
+
+/* attribute selector */
+input[type="radio"]:checked + label{
+    color:red;
+    font-weight:bold;
+}
+
+/* pseudo elements */
+h1::first-letter{
+    color:rgb(45, 2, 2);
+}
+
+p::first-line{
+    color:brown;
+}
+
+p::selection{
+    background-color: rgb(168, 246, 60);
+}
+div p{
+    text-decoration: bold;
+}

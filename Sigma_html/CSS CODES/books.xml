@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="D:\Sigma coding\Sigma_html\CSS CODES\book.css"?>
+
+
+<!DOCTYPE bookstore SYSTEM "D:\Sigma coding\Sigma_html\HTML CODES\bookstore.dtd">
+<bookstore>
+    <book>
+        <title>The Catcher in the Rye</title>
+        <author>J.D. Salinger</author>
+        <ISBN>9780316769488</ISBN>
+        <publisher>Little, Brown and Company</publisher>
+        <edition>Reprint</edition>
+        <price>350</price>
+    </book>
+    <book>
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <ISBN>9700061120084</ISBN>
+        <publisher>Harper Perennial Modern Classics</publisher>
+        <edition>Anniversary edition</edition>
+        <price>450</price>
+    </book>
+</bookstore>

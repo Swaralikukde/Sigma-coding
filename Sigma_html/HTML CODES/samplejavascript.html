@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        var a=12;
+        var b=14;
+        var result;
+        document.write("Value of a is "+a+ "and of b is "+b);
+        result=a+b;
+        document.write("<br>");
+        document.write("The answer is :");
+        document.write(result);
+
+        function Warning(){
+            alert("There is nothing");
+            document.write("you haven't filled anything");
+        }
+        function Value(){
+            var name=prompt("Enter name : ",name);
+            document.write("You have entered" +name);
+        }
+    </script>
+</head>
+<body>
+    <button type="submit" value="B1" onclick="Warning()">Alert</button>
+    <button type="submit" value="B2" onclick="Value()">Prompt</button>
+</body>
+</html>

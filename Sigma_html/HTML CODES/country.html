@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Capitals</title>
+    <style>
+        .country-list {
+            margin-bottom: 20px;
+        }
+        .country-list button {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="country-list">
+        <button onclick="showCapital('India')">India</button>
+        <button onclick="showCapital('USA')">USA</button>
+        <button onclick="showCapital('France')">France</button>
+        <button onclick="showCapital('Japan')">Japan</button>
+    </div>
+    <textarea id="capitalOutput" rows="4" cols="50" readonly></textarea>
+
+    <script>
+        const countryCapitals = {
+            'India': 'New Delhi',
+            'USA': 'Washington, D.C.',
+            'France': 'Paris',
+            'Japan': 'Tokyo'
+        };
+
+        function showCapital(country) {
+            const capital = countryCapitals[country];
+            const outputArea = document.getElementById('capitalOutput');
+            outputArea.value = `The capital of ${country} is ${capital}.`;
+        }
+    </script>
+</body>
+</html>
